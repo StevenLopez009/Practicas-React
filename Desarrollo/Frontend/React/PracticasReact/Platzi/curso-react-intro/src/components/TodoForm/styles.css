@@ -1,0 +1,62 @@
+form {
+  background-color: #f9f9f9; /* Fondo suave */
+  padding: 20px;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+  max-width: 400px;
+  margin: 20px auto; /* Centrado */
+  display: flex;
+  flex-direction: column; /* Apila los elementos */
+  gap: 16px; /* Espaciado entre los elementos */
+}
+
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ccc; /* Borde claro */
+  border-radius: 4px;
+  resize: none; /* Desactiva el cambio de tamaño */
+  height: 80px; /* Altura inicial */
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #007bff; /* Color de enfoque */
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5); /* Sombra al enfocar */
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.cancelar {
+  background-color: #ff6b6b; /* Rojo para cancelar */
+  color: white;
+  transition: background-color 0.3s;
+}
+
+button.cancelar:hover {
+  background-color: #ff4c4c; /* Rojo más oscuro al pasar el cursor */
+}
+
+button.aceptar {
+  background-color: #4caf50; /* Verde para aceptar */
+  color: white;
+  transition: background-color 0.3s;
+}
+
+button.aceptar:hover {
+  background-color: #45a049; /* Verde más oscuro al pasar el cursor */
+}

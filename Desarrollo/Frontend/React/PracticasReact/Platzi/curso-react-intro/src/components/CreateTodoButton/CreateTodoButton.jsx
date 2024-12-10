@@ -1,7 +1,13 @@
-function CreateTodoButton() {
+function CreateTodoButton({ openModal, setOpenModal }) {
+  function handleModal() {
+    setOpenModal(!openModal); 
+  }
+
   return (
-    <button onClick={(event)=> console.log(event.target)}>Crear tarea</button>
+    <button onClick={handleModal}>
+      {openModal ? "Cerrar tarea" : "Crear tarea"}
+    </button>
   );
 }
 
-export default CreateTodoButton
+export default CreateTodoButton;
