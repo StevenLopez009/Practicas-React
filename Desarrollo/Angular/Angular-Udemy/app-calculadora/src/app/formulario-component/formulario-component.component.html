@@ -1,0 +1,21 @@
+<div class="container mt-4">
+  <div class="card shadow-sm p-4">
+    <h3 class="text-center mb-4 text-primary">Calculadora</h3>
+
+    <div class="mb-3">
+      <label for="numero1" class="form-label fw-semibold">Número 1:</label>
+      <input id="numero1" type="number" class="form-control" [(ngModel)]="numero1"
+        placeholder="Ingrese el primer número" />
+    </div>
+
+    <div class="mb-3">
+      <label for="numero2" class="form-label fw-semibold">Número 2:</label>
+      <input id="numero2" type="number" class="form-control" [(ngModel)]="numero2"
+        placeholder="Ingrese el segundo número" />
+    </div>
+
+    <div class="d-grid gap-2 mb-3">
+      <button class="btn btn-success" (click)="sumar()">Sumar</button>
+    </div>
+  </div>
+</div>
